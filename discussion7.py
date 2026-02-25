@@ -86,7 +86,7 @@ def calculate_avg_price_by_neighbourhood_group_and_room(listings):
 
         group = listing["neighbourhood_group"]
         room = listing["room_type"]
-        price = float(listing["price"])   # convert string → number
+        price = float(listing["price"])   
 
         key = (group, room)
 
@@ -103,6 +103,7 @@ def calculate_avg_price_by_neighbourhood_group_and_room(listings):
         averages[key] = totals[key] / counts[key]
 
     return averages
+
 
 
 ###############################################################################
